@@ -24,7 +24,7 @@ def ventes():
     cur.execute("SELECT id, produit, montant FROM ventes;")
     rows = cur.fetchall()
     conn.close()
-    return jsonify(rcuows)
+    return jsonify(rows)
 
 
 if __name__ == "__main__":
